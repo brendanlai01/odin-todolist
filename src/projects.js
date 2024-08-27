@@ -1,5 +1,5 @@
 
-class Projects{
+export default class Projects{
 
     constructor(project){
         this.project = [];
