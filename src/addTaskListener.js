@@ -13,6 +13,7 @@ function addContainerListener(){
 
 function submitTaskListener(){
     let submitTask = document.querySelector('#add-button');
+    let form = document.querySelector('form');
 
     submitTask.addEventListener('click', function(event){
         event.preventDefault();
