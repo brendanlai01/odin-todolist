@@ -67,7 +67,7 @@ main, header{
 }
 
 #logo{
-    content: url('list-box.svg');
+    content: url('./icons/list-box.svg');
     width: 3rem;
     margin-left: 16px;
 }
