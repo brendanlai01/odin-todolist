@@ -1,4 +1,5 @@
 import { createProjectLi } from "./createProject";
+import { filterProjTasks } from "./filterProjectTasks";
 
 export default function addProjectListeners(){
     const addProjectToList = document.querySelector('#add-project');
