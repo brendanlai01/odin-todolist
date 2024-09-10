@@ -1,5 +1,4 @@
-
-function createDefaultHeader(){
+export default function createDefaultHeader(){
     const header = document.createElement('header');
     const headerTitle = document.createElement('h1');
     headerTitle.textContent = 'Tasks';
