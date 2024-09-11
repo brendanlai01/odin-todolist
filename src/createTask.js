@@ -85,6 +85,14 @@ function createTaskNode(title, desc, date, prio){
     return top;
 }
 
+function displayTasks(array){
+    array.forEach((task) => {
+        let i = myTasks.indexOf(task);
+        let taskNode = createTaskNode(task.title, task.desc, task.date, task.priority);
+        taskNode.dataset.index = i;
+    });
+}
+
 function updateDataIndex(){
     let list = document.querySelectorAll('main .task-container');
     for(let i = 0; i < myTasks.length; i++){

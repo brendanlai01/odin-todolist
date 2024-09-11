@@ -1,4 +1,4 @@
-import { myTasks } from "./createTask";
+import { myTasks, displayTasks } from "./createTask";
 import { resetDisplay } from "./filterProjectTasks";
 import { createTaskNode } from "./createTask";
 import { isFuture, isToday, startOfToday } from "date-fns";
@@ -37,11 +37,7 @@ function filterToday(date){
 
     resetDisplay();
     console.log(filteredArr);
-    filteredArr.forEach((task)=>{
-        let i = myTasks.indexOf(task);
-        let taskNode = createTaskNode(task.title, task.desc, task.date, task.priority);
-        taskNode.dataset.index = i;
-    })
+    displayTasks(filteredArr);
 }
 
 function filterUpcoming(){
@@ -49,11 +45,7 @@ function filterUpcoming(){
 
     resetDisplay();
     console.log(filteredArr);
-    filteredArr.forEach((task)=>{
-        let i = myTasks.indexOf(task);
-        let taskNode = createTaskNode(task.title, task.desc, task.date, task.priority);
-        taskNode.dataset.index = i;
-    })
+    displayTasks(filteredArr);
 }
 
 function filterComplete(){
@@ -61,21 +53,13 @@ function filterComplete(){
 
     resetDisplay();
     console.log(filteredArr);
-    filteredArr.forEach((task)=>{
-        let i = myTasks.indexOf(task);
-        let taskNode = createTaskNode(task.title, task.desc, task.date, task.priority);
-        taskNode.dataset.index = i;
-    })
+    displayTasks(filteredArr);
 }
 
 function showAll(){
     resetDisplay();
     console.log(myTasks);
-    myTasks.forEach((task)=>{
-        let i = myTasks.indexOf(task);
-        let taskNode = createTaskNode(task.title, task.desc, task.date, task.priority);
-        taskNode.dataset.index = i;
-    })
+    displayTasks(myTasks);
 }
 
 export { addSidebarTaskListeners };
