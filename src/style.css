@@ -230,10 +230,12 @@ ul{
 }
 
 li{
-    display: block;
+    display: flex;
+    justify-content: space-between;
     font-size: 1.5rem;
     padding: 8px;
     margin-left: 32px;
+    margin-right: 8px;
     font-weight: 300;
     cursor: pointer;
 }
