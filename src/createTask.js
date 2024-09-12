@@ -23,6 +23,8 @@ function takeUserInput(){
 function createTask(title, desc, date, prio, comp, proj){
     const createdTask = new Task(title, desc, date, prio, comp, proj);
     myTasks.push(createdTask);
+    overwriteMyTasks();
+
     let i = myTasks.indexOf(createdTask);
     let taskNode = createTaskNode(createdTask.title, createdTask.desc, createdTask.date, createdTask.priority, createdTask.project);
     taskNode.dataset.index = i;
