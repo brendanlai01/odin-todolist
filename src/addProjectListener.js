@@ -1,5 +1,7 @@
 import { createProjectLi } from "./createProject";
+import { createProject } from "./createProject";
 import { filterProjTasks } from "./filterProjectTasks";
+import { addDataIndex } from "./createProject";
 
 export default function addProjectListeners(){
     const addProjectToList = document.querySelector('#add-project');
@@ -18,7 +20,8 @@ export default function addProjectListeners(){
     submitProject.addEventListener('click', (event)=>{
         event.preventDefault();
         if(userProject.value !== ''){
-            createProjectLi(userProject.value);
+            createProject(userProject.value);
+            addDataIndex();
             projectForm.reset();
             projectDialog.close();
         }else{
