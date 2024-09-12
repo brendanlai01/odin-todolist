@@ -119,6 +119,7 @@ function checkEmptyTitle(title){
 }
 
 export { takeUserInput, updateDataIndex, createTaskNode, createTests, myTasks };function overwriteMyTasks(){
+function overwriteMyTasks(){
     localStorage.setItem('myTasks', JSON.stringify(myTasks));
 }
 
