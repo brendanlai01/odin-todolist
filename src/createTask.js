@@ -30,7 +30,7 @@ function createTask(title, desc, date, prio, comp, proj){
     return taskNode;
 }
 
-function createTaskNode(title, desc, date, prio){
+function createTaskNode(title, desc, date, priority){
     let main = document.querySelector('main');
     let top = document.createElement('div');
     let taskTitle = document.createElement('div'); //holds title and desc
@@ -59,7 +59,6 @@ function createTaskNode(title, desc, date, prio){
     taskTitle.append(checkCircle, taskDescriptor);
 
     let priorityText = document.createElement('strong');
-    priorityText.textContent = `${prio}`;
     let dateText = document.createElement('p');
     dateText.textContent = `${date}`;
     let editBtn = document.createElement('img');
