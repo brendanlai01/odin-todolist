@@ -59,6 +59,15 @@ function createTaskNode(title, desc, date, priority){
     taskTitle.append(checkCircle, taskDescriptor);
 
     let priorityText = document.createElement('strong');
+    priorityText.textContent = `${priority}`;
+    if(priority === 'Low'){
+        priorityText.style.color = 'green'
+    }else if(priority === 'Med'){
+        priorityText.style.color = 'gold';
+    }else if(priority === 'High'){
+        priorityText.style.color = 'crimson';
+    }
+
     let dateText = document.createElement('p');
     dateText.textContent = `${date}`;
     let editBtn = document.createElement('img');
