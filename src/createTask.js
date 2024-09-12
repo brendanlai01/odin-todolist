@@ -136,6 +136,7 @@ function checkForCompletion(){
     })
 }
 
+
 function checkEmptyDate(date){
     if(date === null || date === '') return true;
     else return false;
@@ -146,7 +147,6 @@ function checkEmptyTitle(title){
     else return false;
 }
 
-export { takeUserInput, updateDataIndex, createTaskNode, createTests, myTasks };function overwriteMyTasks(){
 function overwriteMyTasks(){
     localStorage.setItem('myTasks', JSON.stringify(myTasks));
 }
@@ -155,3 +155,4 @@ function setMyTasks(array){
     return myTasks = array;
 }
 
+export { takeUserInput, updateDataIndex, createTaskNode, myTasks, displayTasks, setMyTasks, checkForCompletion };
