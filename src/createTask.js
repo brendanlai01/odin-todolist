@@ -77,8 +77,21 @@ function createTaskNode(title, desc, date, prio){
     });
     
     checkCircle.addEventListener('click', ()=>{
-        myTasks[top.dataset.index].switchCompletion();
-        console.log(myTasks[top.dataset.index]);
+        let index = top.dataset.index;
+        let currentTask = myTasks[index];
+        let storedArray = getTasks();
+
+        if(currentTask.completion !== 'Done'){
+            currentTask.completion = 'Done'
+            checkCircle.classList.add('green');
+            storedArray[index].completion = 'Done';
+            overwriteMyTasks();
+        }else{
+            currentTask.completion = 'Not Done'
+            checkCircle.classList.remove('green');
+            storedArray[index].completion = 'Not Done';
+            overwriteMyTasks();
+        }
     })
 
     taskDate.append(priorityText, dateText, editBtn, trashBtn);
