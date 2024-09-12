@@ -100,12 +100,6 @@ function updateDataIndex(){
     }
 }
 
-function createTests(){
-    createTask('Mooyah #0', 'This is the func call for createTask / 0th element', '8/25/2024', 'Med', 'Not Done', 'Inbox');
-    createTask('Mooyah #1', 'This is the func call for createTask / 1ST element',  '9/10/2024', 'Med', 'Not Done', 'Example 2');
-    createTask('Mooyah #2', 'This is the func call for createTask / 2ND element', '10/21/2021', 'Med', 'Not Done', 'Mooyah');
-    createTask('Mooyah #3', 'This is the func call for createTask / 3RD element', '4/19/2023', 'Low', 'Not Done', 'Inbox');
-    createTask('Mooyah #4', 'This is the func call for createTask / 3RD element', '7/01/2026', 'High', 'Not Done', 'Inbox');
 }
 
 function checkEmptyDate(date){
