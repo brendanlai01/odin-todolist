@@ -3,8 +3,9 @@ import { format } from 'date-fns';
 import check_circle from './icons/check-circle-outline.svg';
 import dots from './icons/dots-horizontal.svg';
 import trash from './icons/trash-can.svg';
+import { getTasks } from './storage.js';
 
-let myTasks = [];
+let myTasks = getTasks();
 
 function takeUserInput(){
     let newTitle = document.querySelector('#title').value;
