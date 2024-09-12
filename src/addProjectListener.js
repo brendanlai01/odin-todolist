@@ -33,7 +33,7 @@ export default function addProjectListeners(){
 }
 
 function updateHeaderListeners(){
-    let projectsList = document.querySelectorAll('.projects-list li');
+    let projectsList = document.querySelectorAll('.projects-list li span');
     let header = document.querySelector('.header h1');
 
     projectsList.forEach((li)=>{
