@@ -84,6 +84,7 @@ function createTaskNode(title, desc, date, priority){
         trashBtn.parentElement.parentElement.remove();
         myTasks.splice(index, 1);
         updateDataIndex();
+        overwriteMyTasks();
         console.log(myTasks);
     });
     
