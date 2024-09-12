@@ -122,3 +122,7 @@ export { takeUserInput, updateDataIndex, createTaskNode, createTests, myTasks };
     localStorage.setItem('myTasks', JSON.stringify(myTasks));
 }
 
+function setMyTasks(array){
+    return myTasks = array;
+}
+
