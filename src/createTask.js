@@ -91,6 +91,7 @@ function displayTasks(array){
         let taskNode = createTaskNode(task.title, task.desc, task.date, task.priority);
         taskNode.dataset.index = i;
     });
+    checkForCompletion();
 }
 
 function updateDataIndex(){
