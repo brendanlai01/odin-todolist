@@ -100,6 +100,15 @@ function updateDataIndex(){
     }
 }
 
+function checkForCompletion(){
+    let tasks = document.querySelectorAll('.task-container');
+    tasks.forEach((item)=>{
+        let index = item.dataset.index;
+        if(myTasks[index].completion === 'Done'){
+            let circle = item.querySelector('.check');
+            circle.classList.add('green');
+        }
+    })
 }
 
 function checkEmptyDate(date){
