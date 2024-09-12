@@ -28,7 +28,6 @@ function createTask(title, desc, date, prio, comp, proj){
     let i = myTasks.indexOf(createdTask);
     let taskNode = createTaskNode(createdTask.title, createdTask.desc, createdTask.date, createdTask.priority, createdTask.project);
     taskNode.dataset.index = i;
-    localStorage.setItem("createdTask", JSON.stringify(createdTask.title));
     return taskNode;
 }
 
