@@ -1,4 +1,3 @@
-import { createProjectLi } from "./createProject";
 import { createProject } from "./createProject";
 import { filterProjTasks } from "./filterProjectTasks";
 import { addDataIndex } from "./createProject";
