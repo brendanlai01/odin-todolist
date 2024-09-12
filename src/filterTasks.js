@@ -62,4 +62,4 @@ function showAll(){
     displayTasks(myTasks);
 }
 
-export { addSidebarTaskListeners };
+export { addSidebarTaskListeners, showAll };
