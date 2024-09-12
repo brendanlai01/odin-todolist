@@ -1,16 +1,14 @@
 import  { updateHeader, updateHeaderListeners }  from './addProjectListener.js';
 
-//project list dropdown method (mostly all project sidebar methods)
 const expand = document.querySelector('#expand');
 let projectsList = document.querySelectorAll('.projects-list li');
 
-
 function dropdown(){
     projectsList.forEach((li)=>{
-        if(isDisplayBlock(li)){
+        if(isDisplayed(li)){
             li.style.display = 'none';
         }else{
-            li.style.display = 'block';
+            li.style.display = 'flex';
         }
     });
 }
